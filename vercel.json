@@ -1,7 +1,8 @@
 {
-  "functions": {
-    "api/updateMetrics.js": {
-      "schedule": "@daily"
+  "crons": [
+    {
+      "path": "/api/updateMetrics",
+      "schedule": "0 0 * * *"
     }
-  }
+  ]
 }
