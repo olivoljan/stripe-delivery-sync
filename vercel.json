@@ -1,0 +1,7 @@
+{
+  "functions": {
+    "api/updateMetrics.js": {
+      "schedule": "@daily"
+    }
+  }
+}
