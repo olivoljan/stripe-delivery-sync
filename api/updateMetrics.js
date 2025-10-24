@@ -35,7 +35,8 @@ export default async function handler(req, res) {
 
     await sheets.spreadsheets.values.append({
       spreadsheetId: process.env.GOOGLE_SHEET_ID,
-      range: 'Data!A:D',
+ range: "'Data'!A:D",
+      
       valueInputOption: 'USER_ENTERED',
       requestBody: {
         values: [[new Date().toISOString().split('T')[0], planned, delivered, canceled]],
