@@ -1,0 +1,11 @@
+{
+  "name": "stripe-delivery-sync",
+  "version": "1.0.0",
+  "description": "Daily sync script to fetch planned, delivered, and canceled deliveries from Stripe and update Google Sheets.",
+  "main": "api/updateMetrics.js",
+  "type": "module",
+  "dependencies": {
+    "stripe": "^12.14.0",
+    "googleapis": "^105.0.0"
+  }
+}
